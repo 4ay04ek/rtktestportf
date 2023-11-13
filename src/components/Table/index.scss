@@ -1,0 +1,18 @@
+.items {
+  overflow-y: scroll;
+  height: 420px;
+}
+
+.items::-webkit-scrollbar {
+  width: 2px;
+  overflow: overlay;
+}
+
+.items::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.items::-webkit-scrollbar-thumb {
+  background-color: #000000;
+  border-radius: 2px;
+}

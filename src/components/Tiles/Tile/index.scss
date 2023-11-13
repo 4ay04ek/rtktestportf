@@ -1,0 +1,31 @@
+.tile {
+  width: 200px;
+  height: 300px;
+  background-color: rgb(230, 230, 230);
+  margin: 15px;
+  text-align: center;
+  position: relative;
+}
+
+.tileSelected {
+  background-color: rgb(207, 236, 255);
+}
+
+.tileSelect {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.tileName {
+  margin-top: 40px;
+  font-weight: 700;
+}
+
+.tilePhoto {
+  margin-top: 20px;
+}
+
+.tileText {
+  margin: 10px 0;
+}

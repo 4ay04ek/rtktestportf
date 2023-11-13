@@ -1,0 +1,49 @@
+.centerContent {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.content {
+  width: 80%;
+}
+
+.tools {
+  padding: 0px 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.showTypes {
+  width: 220px;
+  div {
+    border: 1px solid black;
+    cursor: pointer;
+    height: 32px;
+    svg {
+      pointer-events: none;
+    }
+  }
+  display: flex;
+  gap: 4px;
+}
+
+.data {
+  width: 100%;
+  height: fit-content;
+}
+
+body::-webkit-scrollbar {
+  width: 6px;
+  overflow: overlay;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #000000;
+}

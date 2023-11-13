@@ -1,0 +1,19 @@
+.card {
+  width: 350px;
+  height: 70px;
+  border-bottom: 1px solid black;
+}
+
+.cardName {
+  position: relative;
+  font-size: 13pt;
+  left: 20px;
+  top: 10px;
+}
+
+.cardText {
+  position: relative;
+  font-size: 12pt;
+  left: 20px;
+  top: 15px;
+}

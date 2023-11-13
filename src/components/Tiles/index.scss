@@ -1,0 +1,21 @@
+.tiles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 650px;
+  overflow-y: scroll;
+}
+
+.tiles::-webkit-scrollbar {
+  width: 2px;
+  overflow: overlay;
+}
+
+.tiles::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.tiles::-webkit-scrollbar-thumb {
+  background-color: #000000;
+  border-radius: 2px;
+}

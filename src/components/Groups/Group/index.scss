@@ -1,0 +1,38 @@
+.group {
+  width: 400px;
+  height: 500px;
+  border: 2px solid black;
+  margin: 30px;
+}
+
+.groupTitle {
+  font-size: 14pt;
+  font-weight: 500;
+  position: relative;
+  top: 15px;
+  left: 40px;
+}
+
+.groupItems {
+  width: 350px;
+  height: 416px;
+  border: 2px solid black;
+  margin: 0 24px;
+  margin-top: 30px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.groupItems::-webkit-scrollbar {
+  width: 2px;
+  overflow: overlay;
+}
+
+.groupItems::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.groupItems::-webkit-scrollbar-thumb {
+  background-color: #000000;
+  border-radius: 2px;
+}

@@ -1,0 +1,27 @@
+.row {
+  background-color: rgb(235, 235, 235);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 35px;
+  div {
+    flex: 100;
+    padding-left: 15px;
+  }
+  &:hover {
+    background-color: rgb(225, 225, 225);
+  }
+  &:nth-child(2n) {
+    background-color: rgb(200, 200, 200);
+    &:hover {
+      background-color: rgb(190, 190, 190);
+    }
+  }
+}
+
+.rowSelected {
+  background-color: rgb(189, 211, 240) !important;
+  &:nth-child(2n) {
+    background-color: rgb(154, 176, 205) !important;
+  }
+}
