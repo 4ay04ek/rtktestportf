@@ -19,7 +19,7 @@ function Tile({ user }: TileProps) {
       </div>
       <div className="tileName">{user.name}</div>
       <div className="tilePhoto">
-        <EmployeeIcon width={100} height={100} />
+        <EmployeeIcon />
       </div>
       <div className="tileText">{user.group}</div>
       <div className="tileText">{user.login}</div>

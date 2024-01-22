@@ -12,6 +12,7 @@ import { GroupIcon } from "./Icons/GroupIcon";
 import Tiles from "../Tiles";
 import Groups from "../Groups";
 import Loading from "../Loading";
+import useWindowDimensions from "./helpers";
 
 type TableProps = {
   loading?: boolean;
@@ -24,8 +25,9 @@ const ICON_SIZE = 32;
 const SELECT_COLOR = "rgb(240, 240, 240)";
 
 function Main(props: TableProps) {
+  const { width } = useWindowDimensions();
   const dispatch = useDispatch();
-  const [showType, setShowType] = useState("list");
+  const [showType, setShowType] = useState(width >= 1200 ? "list" : "tiles");
   useEffect(() => {
     //@ts-expect-error - TS2345
     dispatch(userActions.fetchUsers());
@@ -45,12 +47,14 @@ function Main(props: TableProps) {
         <div className="content">
           <div className="tools">
             <div className="showTypes" ref={types}>
-              <div
-                style={{ backgroundColor: SELECT_COLOR }}
-                onClick={(e) => handleShowTypeClick(e, "list")}
-              >
-                <ListIcon width={ICON_SIZE} height={ICON_SIZE} />
-              </div>
+              {width >= 1200 && (
+                <div
+                  style={{ backgroundColor: SELECT_COLOR }}
+                  onClick={(e) => handleShowTypeClick(e, "list")}
+                >
+                  <ListIcon width={ICON_SIZE} height={ICON_SIZE} />
+                </div>
+              )}
               <div onClick={(e) => handleShowTypeClick(e, "tiles")}>
                 <TilesIcon width={ICON_SIZE} height={ICON_SIZE} />
               </div>

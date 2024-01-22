@@ -7,6 +7,9 @@
 
 .content {
   width: 80%;
+  @media screen and (max-width: 800px) {
+    width: 95%;
+  }
 }
 
 .tools {
@@ -46,4 +49,10 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
   background-color: #000000;
+}
+
+@media screen and (max-width: 1200px) {
+  #hide-on-phones {
+    display: none;
+  }
 }
